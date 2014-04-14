@@ -1,0 +1,8 @@
+tr,td,table{  border: 2px solid black;
+text-align:center; 
+}h1,h2,h3{ text-align: center; 
+}*{background-color: #85847F; 
+ font-family:Helvetica;
+ width 50%;
+margin: 0 auto;
+} 

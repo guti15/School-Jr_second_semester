@@ -1,0 +1,81 @@
+#----------------------------------------------------------------------------#
+# example3.a
+# Joe Schmoe
+# Purpose: Allow to display minimun and maximum as well as variance according to user input 
+# Input:  The input right now lets the user import one number 
+# Output:  then the  number is placed into the second position of the array
+#----------------------------------------------------------------------------#
+	.data
+instr:	.asciiz	"Enter an integer: "
+outstr: .asciiz "Array is: "
+endl:	.asciiz "\n"
+list: 	.word 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+text: 	.asciiz "Sorted list of integers are: " 
+#----------------------------------------------------------------------------#
+	.text
+	.globl main
+main:
+	la $a0, list 		# load adress places list in a0 
+ 	li $v0, 4		# load immedt.  v0 and op 4 = print string 
+ 	syscall 
+ 	
+    	la $a0, instr		# prints out the mssg that says Enter an integer:
+    	syscall 
+    	
+    	li  $v0, 5		# Reads integer and loads them to v0  
+    	syscall 		# struggled finding a way to accept the list of numbers all at once.  
+    				# original code in python I created a loop to accept each individual number 
+    	
+    	move $t3,$v0		# move the user input in $v0 into $t3 
+    	
+    	li   $t2, 4    		#  used 4 to change the location of the array.
+    	sw   $t3,list($t2)	# stores word the content in t3 on to  list(second index)
+    	
+ # print the list
+  	li	$v0,4
+  	la	$a0,outstr
+ 	syscall 
+ 	
+ 	
+	beqz $v0, sort		# in order to branch out to the sorting function 
+ #first element
+ 	li	$t1,4
+ 	li	$t0,0
+ 	lw	$a0,list($t0) 
+    	li	$v0,1
+    	syscall 
+ # second element
+	li	$t0, 1
+	mul	$t2, $t0, $t1		# find offset by multiplying index (t0)
+					# by number of bytes (t1) and store (t2)
+					# this computation is always needed to
+					# find "offset" from the "base" address
+	lw	$a0, list($t2)		# load array[1] into a0 for printing
+	li	$v0, 1			# print a0
+	syscall
+# third element
+	li	$t2, 8			# can load offset directly, too
+	lw	$a0, list($t2)		
+	li	$v0, 1	
+	syscall
+# fourth element
+	li	$t2, 12			# last one
+	lw	$a0, list($t2)		
+	li	$v0, 1		
+	syscall
+    	
+    	
+   
+sort: 
+	la $a1,$list 		#tried to build a function to then grab the the first and last index of array
+	li $v0, 4  
+	la $a0, outstr
+	syscall
+loop: 
+	lw $t0,0($a1)
+	addiu $a1,$a1,4
+	beqz $to,done
+# get data
+
+
+done: 

@@ -1,0 +1,17 @@
+-*-mode: org -*- 
+
+
+
+| name  | power | Byte Name |
+|-------+-------+-----------|
+| Kilo  |  10^3 | kilobyte  |
+| Mega  |  10^9 | Mega      |
+| Tera  | 10^12 | Trilla    |
+| Peta  | 10^15 |           |
+| Exa   | 10^18 | exa       |
+| Zetta | 10^21 | zetta     |
+| Yotta | 10^24 | yotta     |
+
+
+  
+** cvalidate web page to see if it passes the test for most web browser 

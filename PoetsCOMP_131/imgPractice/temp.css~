@@ -1,0 +1,22 @@
+body{ 
+
+    background-color:rgb(220,220,220); 
+    font-family: Helvetica;
+} 
+
+.container{ 
+    background-color:rgba(245,245,245,0.5);
+    margin-left: auto; 
+    margin-right: auto; 
+    border-radius: 25px; 
+    width: 750px;
+    height: auto;
+    text-align: center;  
+} 
+
+img{
+
+    width: 550px;
+    height: auto;
+    border-radius: 25px; 
+}

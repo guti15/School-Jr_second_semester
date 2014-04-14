@@ -1,0 +1,23 @@
+# -*- mode:org -*- 
+*homework  .zip :: File 
+** LeblancWeb
+  + index.html
+  + imgs
+  + folderONE
+  + folderTWO
+ 
+
+1.  notes for script 
+    + <script language="Javascript">
+
+2. Talking about base 16 
+   |    4 |    3 |    2 |    1 |
+   |------+------+------+------|
+   | 10^3 | 10^2 | 10^1 | 10^0 |
+   |      |      |      |      |
+   
+    + what is 3A? 
+      -  
+
+* Topics for the Quiz on Monday 
+  +

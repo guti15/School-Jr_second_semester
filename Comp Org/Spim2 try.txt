@@ -1,0 +1,101 @@
+# Robert Gutierrez 
+
+#Manipulate floasts and chalecter and write a couple of functions.
+
+#----------------------------------------------------------------------------#
+	.data
+instr:	  .asciiz  "Method of Pay. S = Smaht pay & C = Credit Purchase(Q to quit): "
+outstr:   .asciiz "Your recipt: \n"
+choose:	  .asciiz "You chose payment: " 
+endl:	  .asciiz "\n"
+payment:  .space 8
+howMuch:  .space 40
+Gas:	  .space 8 
+Smaht:	  .asciiz "s\n"
+Credit:	  .asciiz "c\n"
+Quit:	  .asciiz "Q\n"
+quitTwo:  .asciiz "q\n"
+
+#----------------------------------------------------------------------------#
+	.text
+	.globl main
+main:
+	li	$v0, 4		# op code for print string 
+	la	$a0, instr
+	syscall
+
+# get data
+	li	$v0, 8		# v0 stores user's input   8 Read string
+	la	$a0, payment	#hopefully will store user input in payment
+	li 	$a1, 8		# the byte space
+	move 	$t0, $a0	# save the user input into t0
+	syscall
+
+
+	
+#	la 	$a0,payment
+#	move	$a0, $t0
+#	li 	$v0,4
+#	syscall 
+
+
+
+# we need to compare  --> Payment with Smaht & Credit
+	# registers holding are t0 with user input 
+# branching
+	la  	$t1, Smaht   # capital 'S' 	
+	la 	$t2, Credit  # capital 'C'
+	la 	$t3, Quit    # quit with Upper case 'Q'
+	la 	$t4, quitTwo  # quit with lower case 'q'
+# ---------------------------------------------------------------------------- Debug
+	
+#	li 	$v0, 4
+#	syscall
+	
+# 	la	$a0,Credit   
+#	li 	$v0, 4
+#	syscall   - -- --  Printed  NICE CHECK
+
+#	move	$a0,$t0
+#	li 	$v0,4
+#	syscall
+
+# ---------------------------------------------------------------------------- Debug
+
+	beq 	$t1, $t0,smart	# Branch if equal User input & Smaht
+	
+#	beq	$t2, $t0,crdt	# Branch if equal to Credit
+#	beq 	$t0, $t3	# Branch if equall to Quit 'Q'
+#	beq 	$t0, $t4	# Bracnif equal to quit 'q'
+	
+
+	
+
+
+smart:
+	la $a0, choose
+	li $v0,4
+	syscall
+
+	la $a0,payment
+	
+	li $v0,4
+	syscall
+# create a jump back to where I was then quite the program on the top peice before it even gets down here again.  so this fuction does not happen sequentially 
+#----------------------------------------------------------------------------
+	
+#crdt:
+	
+#	li $v0,4
+#	syscall
+	
+
+#	li $v0,10
+#	syscall
+
+
+
+
+
+	li $v0,10
+	syscall

@@ -1,0 +1,3 @@
+\contentsline {section}{\numberline {1}F-E Cycle}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Cylces}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}CPU Time (t) (in seconds) = ( \# clock cycles ina program ) / (Clock Rate)}{2}{subsection.1.2}

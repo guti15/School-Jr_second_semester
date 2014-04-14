@@ -1,0 +1,10 @@
+Poet Notes : 
+**  First day of Poets
+* always start with using//  <!Doctype htm> 
+  <html>
+ - <img> src="name.jpg"
+   -src is an attribute 
+ - alt="shows picuture if img not shown "
+    height, border "search at w3c for more" 
+ - Target="_blank" go to amazon attribute 
+ 

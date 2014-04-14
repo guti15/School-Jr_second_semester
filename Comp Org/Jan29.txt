@@ -1,0 +1,37 @@
+# -*- mode: org -*-
+
+
+Lab 3: 3:30 -5:20 Thursday 2/6
+
+* F-E Cycle 
+  1. Get Instr
+  2. Interpret Instrc  :: Binary Instructions 
+  3. Execute Instrc
+  4. Go to 1
+
+** Cylces 
+  + Clock Cycle = CC
+  + Clock Period - Time @ start of a CC to start of Next CC 
+  + Clock Rate (CR) - 1 / Clock Period 
+    - # cycles / seconds 
+
+| speed | cycle/sec |
+|-------+-----------|
+| MHz   |      10^6 |
+| GHz   |      10^9 |
+| THz   |     10^12 |
+
+CPU Time (t) (in seconds) =   ( # clock cycles ina  program ) / (Clock Rate)
+
+ T = (CC) / (CR) 
++ Instruction = I 
++ Instruction Count = IC - Depends on Architecture -> Assembly Languge 
++ Cylces per Instructions = CPI - Average # of cylecs  Needed to process each Instruction 
++ often Average of ALL Instructions In Instruction set 
+
+
+CPI = (CC) / (IC) 
+
++ CPU Time T = ( IC x CPI) / (CR) 
+example :: 
+

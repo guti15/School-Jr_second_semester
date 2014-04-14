@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Page 2</title>
+
+</head>
+
+<body>
+  <div class="container"> 
+    <h2><b><center> This is page TWO  with " SOMETHING TEXT " </center></b></h2>
+
+    <!-- Some tag for some img will go here not sure what img yet --> 
+    <img src="../images/Perry.jpg" alt="Perry from Disney">
+
+
+  </div>
+
+
+</body>
+
+</html>

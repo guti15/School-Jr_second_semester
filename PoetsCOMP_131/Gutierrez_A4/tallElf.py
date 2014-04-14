@@ -1,0 +1,389 @@
+"""
+=======================================================================
+Summary: This program collects evidence to test the conjecture that
+Tolkien uses words like "tall" near elf names (so the reader is 
+subtly(?) reminded that his elves are not small). Starting with lists
+of adjectives for size (e.g., "tall", "big", etc.) and elf names
+(e.g., Indis, Galadriel, Legolas, etc.) the program creates a report
+listing the number of characters (letters, including whitespace)
+between, for example, "tall" and "Legolas".
+
+.... tall ........... Legolas
+	|-- length ---|
+
+This program is an example of what John Burrows calls a
+"middle game technique". There was a significant amount of work to
+do prior to running this program *and* there will be a significant
+amount of analysis after this program generates results. 
+
+
+Date Last Modified:
+(ed, cn) 01/13/10 --   Translated from Perl to Python
+		         Eric Drewniak '11 & Christina Nelson '11
+(mdl)    02/28/2012 -- Starter Kit set up
+(mdl)    03/15/2014 -- Upgrade to handle unicode, including the regex
+(mdl)    03/16/2014 -- Handles lists of adjectives and elf names
+(   )
+
+=======================================================================
+"""
+#-----------------------------------------------------
+# IMPORTS:
+
+import os        # for trapping files that don't open correctly
+import codecs    # for opening unicode files
+import re        # using the regex engine
+
+DELIMITER = ','  # output will be COMMA separated (.csv file extension)
+
+def main():
+
+	# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	#     Prior to running the program, the user must set:
+	#            (0) pathname of directory holding input files, (1) input filename, 
+	#            (2) list of elf names, (3) list of adjectives (e.g., "tall"), 
+	#            (4) maximum distance, (5) filename of the book (text), and
+	#            (6) a name for the final report/output (Excel) with .csv extension
+	# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+	#(0) relative path of directory(folder) containing files of texts
+	inputDIR = "Tolkien_noTags/"
+	
+	#(1)
+	#inputFilename = "test.txt"
+	inputFilename = "TheFellowshipOfTheRing.txt"
+	#inputFilename = input("\nEnter file to check: ")
+	
+	#(1.1) concatenate pathname and filename	
+	inputPathName  = inputDIR + inputFilename 
+	
+	# (2) Include all the elf names you wish to search for in elfList
+	elfList = ['Legolas']
+	#elfList = ['elf', 'Idril', 'Legolas']
+	elfList = ['Aman', 'Aredhel', 'Arwen', 'elf', 'Elwing', 'Faelivrin', 'Finduilas', 'Idril', 'Indis', 'Galadriel', 'Legolas', 'Nerdanel', 'Nerwen', 'Nimloth']
+	
+	#(2.1) force elf names to lowercase
+	elfList = [name.lower() for name in elfList]
+	
+	#(3) put output report here
+	outputFileName = "outputTallElf.csv"	# put the comma-separated report in this file
+	
+	#(4)	
+	sizeList = ['tall', 'large','taller''tallest', 'giant','alpine']
+	#sizeList = ['tall', 'big', 'large', 'giant', 'lofty', 'huge', 'towering']
+	#(4.1) force adjectives to lowercase
+	sizeList = [name.lower() for name in sizeList]
+
+	#(5) define how close is "close enough"
+	MAX_SEPARATION = 100   # units = characters (letters, including whitespace)
+
+	
+	# open INPUT and OUTPUT files
+	#-----------------------------------------------------
+	# READ (INPUT) the entire file into one big string (text)
+	text = readText( inputPathName )	
+	
+	# open OUTPUT FILE to hold the report
+	outputFile = codecs.open(outputFileName, encoding='utf-8', mode='w')
+	
+	# write the first three HEADERS 
+	# header line #1 mentions inputfile used
+	outputFile.write("input file used in this experiment: %s\n"     % (inputPathName ))
+	outputFile.write("MAX characters between words allowed: %d\n\n" % (MAX_SEPARATION) )
+    
+	# header line #3 in the report (columns C and D in Excel)
+	# note: initial two commas ensure that we skip columns A and B
+	outputFile.write("%s%sDistance Between words%sActual Text \n" % (DELIMITER, DELIMITER, DELIMITER) )
+	
+	# ok, let 'er rip ...
+	# for each of the ADJECTIVES (one at a time) check all the elf names
+	for nextAdjective in sizeList:
+		tallElvesOrBust( text, outputFile, elfList, nextAdjective, MAX_SEPARATION )
+		
+	
+	outputFile.close()
+	
+	print ("\nDone.")
+	
+# end main()
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+#----------
+# readText \
+#__________________________________________________________________________________
+#
+# SUMMARY: Open a file of text, and then read in the entire file, line by line.
+#
+# PREcondition:  a valid path/filename should be passed as an argument
+#
+# POSTcondition: the text within the entire file is returned as one very long string
+#
+# SIDE Effects: none
+#
+# Example of how to use (or how to "call") this function:
+#
+#		text = readText( "someFolderName/someFileOfText.txt" )
+#
+#-----------------------------------------------------------------------------------
+def readText(filename):
+	# let's make sure we can find and open the given filename
+	# if we can't, we're bailing .... (program is finished)
+	if not os.path.exists(filename):
+		print ("ERROR: Cannot open input file named: ", filename )
+		# make the program stop so user acknowledges the failure to open
+		junk = input("\n\nEnter any key to EXIT program ...")
+		sys.exit()
+	 
+	# open file for reading
+	INPUT = codecs.open(filename, encoding='utf-8')
+	 
+	text = ""
+    
+	for line in INPUT:
+		#print(line)
+		line = line.strip()   # remove newline
+		line = line.lower()   # make lower case:
+	
+		#remove punctuation (currently, don't remove apostrophe's '\'', nor hypens '-' )
+		space = ' '
+		puncList = ['.', ',', ':', '!', '?', '.', '\\', '(', ')', '[', ']', '{', '}', '\"', '\n', '\t']   # or could add on:   [ ... , '\'', '-' ]
+		
+		for mark in puncList:
+			line = line.replace(mark,space)
+	
+		# concatenate the next line + SPACE onto the text
+		text = text + line + " "
+	
+	INPUT.close()
+	return text
+
+# end readText()
+
+
+#-----------------
+# tallElvesOrBust \
+#-----------------------------------------------------------------------------------
+def tallElvesOrBust( text, outputFile, elfList, keyword, MAX_SEPARATION ):
+
+	for elf in elfList:
+	    
+		elf = elf.lower()
+	    
+		print ("=============================================================================\n")
+		print ("Test distance between %s and %s .... \n\n" % (keyword, elf)	)
+	    
+		# print the line header for this elf in the report
+		outputFile.write("\nLocation of %s%sLocation of %s,,\n" %(keyword, DELIMITER, elf))
+	    
+	
+		# start new statistics for this Elf name
+		sumBetween  = 0
+		numberTimes = 0
+	
+		# keyword (e.g., "tall") is our regex pattern; but make regex smarter
+		# (i) make sure keyword is not part of another word (e.g., "tall" in "stall")
+		# that is, make sure it is preceded by a whitespace character (\s)
+		# but (ii) allow hyphenated extensions, e.g., "tall-like" is ok
+		# and regularized variants, e.g., "taller"
+		
+		pattern = u'\s' + keyword  
+		# Python v3.x doesn't need the re.UNICODE flag; included to be explicit
+		unicode_pattern = re.compile(pattern, re.UNICODE) 
+		
+		# for each time the keyword appears in the text
+		for match in re.finditer(unicode_pattern, text):
+			# find the starting point of the regex (+1 for leading whitespace)
+			whereIsKeyword = match.start() + 1
+		
+			print ("=============================================================================\n")
+			print ("NEXT keyword: %s was found at: %d  \n\n" % (keyword, whereIsKeyword))
+		
+			# ******************* look LEFT ******************************************************
+			betweenDistance = LookLeft(text, whereIsKeyword, keyword, elf, MAX_SEPARATION)
+		
+			print ("\tDistance between (%s ... %s) is: %d \n\n" % (elf, keyword, betweenDistance))
+		
+			# if an elf name is found to the left in the allowed distance
+			if (0 < betweenDistance and betweenDistance <= MAX_SEPARATION):
+		    
+				# increment for statistics
+				sumBetween = sumBetween + betweenDistance
+				numberTimes = numberTimes + 1
+		    
+				# print this result to the output (Excel) file
+				locationOfElfName = whereIsKeyword - (len(elf) + betweenDistance) # location of elf name
+		    
+				nCharsInText = len(elf) + betweenDistance + len(keyword)  # number of chars between elf name and keyword
+				endSubstring = nCharsInText + locationOfElfName           # location of end of substring
+				theActualText = text[locationOfElfName:endSubstring]      # substring of the actual text
+    
+				outputFile.write( "%d,%d,%d,%s\n" % (whereIsKeyword, locationOfElfName, betweenDistance, theActualText))
+	    
+			# ******************* look RIGHT ******************************************************
+			betweenDistance = LookRight(text, whereIsKeyword, keyword, elf, MAX_SEPARATION)
+			print ("\tDistance between (%s ... %s) is: %d \n\n" % (keyword, elf, betweenDistance) )
+		
+			# if an elf name is found to the right in the allowed distance
+			if (0 < betweenDistance and betweenDistance <= MAX_SEPARATION):
+				sumBetween = sumBetween + betweenDistance
+				numberTimes = numberTimes + 1
+		    
+				#print to output (Excel) file
+				locationOfElfName = whereIsKeyword + (len(keyword) + betweenDistance)  # location of elf name
+		    
+				nCharsInText = (locationOfElfName + len(elf)) - whereIsKeyword   # num of chars between elf name and keyword
+				endSubstring = nCharsInText+whereIsKeyword                       # location of end of substring
+				theActualText = text[whereIsKeyword:endSubstring]                # substring of hte actual text
+    
+				outputFile.write( "%d,%d,%d,%s\n" % (whereIsKeyword, locationOfElfName, betweenDistance, theActualText))
+		
+		# -- END matches for this elf name ---------------------------
+		
+		
+	# -- END FOR each elf name ----------------------------------------------------
+    
+
+    
+# end tallElvesOrBust()
+
+
+
+
+#----------
+# LookLeft \
+#__________________________________________________________________________________
+#
+# SUMMARY: Assuming we have found a key word ("tall") at location whereIsKeyword,
+#          this subroutine LOOKS to the LEFT of that key word for a given elf.
+#
+# PREcondition:  whereIsKeyword holds the character location within text
+#                where the keyword was found; we will look for elfname to the
+#                left of the keyword
+#
+# POSTcondition: if the given elf is found to the left of keyword, we return
+#                the NUMBER OF CHARs BETWEEN keyword and elf; otherwise return 0
+#
+# SIDE Effects:  none
+#
+# Example of how to use (or how to "call") this subroutine:
+#
+#	    betweenDistance  = LookLeft( text, whereIsKeyword, keyword, elf )
+#
+#-----------------------------------------------------------------------------------
+def LookLeft(text, whereIsKeyword, keyword, elf, MAX_SEPARATION):
+	NOT_FOUND = -1
+    
+	nextKey = text.rfind(keyword, 0, whereIsKeyword-1)
+	nextElf = text.rfind(elf, 0, whereIsKeyword-1)
+
+	if nextKey == NOT_FOUND:
+		print ("**** LOOK LEFT -- no keyword %s found to left." % (keyword) )
+	else:
+		print ("**** LOOK LEFT -- the next %s is found at: \t\t%d" % (keyword, nextKey) )
+	
+	if nextElf == NOT_FOUND:
+		print ("**** LOOK LEFT -- no elfname %10s found to left." % (elf) )
+	else:
+		print ("**** LOOK LEFT -- the next %10s is found at: \t%d" % (elf, nextElf) )
+    
+	
+	
+	# case (1): if no elfName is found to the left
+	if (nextElf == NOT_FOUND):
+		return 0
+    
+	# case (2): elfName was found, but no keyword is found to the left
+	elif (nextKey == NOT_FOUND):
+		distanceToElf = whereIsKeyword - (nextElf + len(elf))
+		if(distanceToElf <= MAX_SEPARATION):
+			return distanceToElf
+		else:
+			return 0
+	
+	# case (3): both keyword and elf were found to the left
+	else:
+		# if the elfName was found first?
+		if(nextElf > nextKey):
+			distanceToElf = whereIsKeyword - (nextElf + len(elf))
+			if(distanceToElf <= MAX_SEPARATION):
+				return distanceToElf
+			else:
+				return 0
+		else:
+			return 0
+
+# end LookLeft()
+#__________________________________________________________________________________
+
+
+#-----------
+# LookRight \
+#__________________________________________________________________________________
+#
+# SUMMARY: Assuming we have found a key word ("tall") at location whereIsKeyword,
+#          this subroutine LOOKS to the RIGHT of that key word for a given elf.
+#
+# PREcondition:  whereIsKeyword holds the character location within text
+#                where the keyword was found; we will look for elf to the
+#                right of the keyword
+#
+# POSTcondition: if the given elf is found to the right of keyword, we return
+#                the NUMBER OF CHARs BETWEEN keyword and elf; otherwise return 0
+#
+# SIDE Effects:  none
+#
+# Example of how to use (or how to "call") this subroutine:
+#
+#	    betweenDistance  = LookRight( text, whereIsKeyword, keyword, elf);
+#
+#-----------------------------------------------------------------------------------	
+def LookRight(text, whereIsKeyword, keyword, elf, MAX_SEPARATION):
+	NOT_FOUND = -1 
+	nextKey = text.find(keyword, whereIsKeyword+1)
+	nextElf = text.find(elf, whereIsKeyword+1)
+    
+	if nextKey == NOT_FOUND:
+		print ("**** LOOK RIGHT -- no keyword %s found to right." % (keyword) )
+	else:
+		print ("**** LOOK RIGHT -- the next %s is found at: \t\t%d" % (keyword, nextKey) )
+	
+	if nextElf == NOT_FOUND:
+		print ("**** LOOK RIGHT -- no elfname %10s found to right." % (elf) )
+	else:
+		print ("**** LOOK RIGHT -- the next %10s is found at: \t%d" % (elf, nextElf) )
+	
+    	# case (1): if no elf found to the right
+	if (nextElf == NOT_FOUND):
+		return 0
+    
+	# case (2): elf was found, but no keyword found to the right
+	elif (nextKey == NOT_FOUND):
+		distanceToElf = nextElf - (whereIsKeyword + len(keyword))
+	
+		if (distanceToElf <= MAX_SEPARATION):
+			return distanceToElf
+		else:
+			return 0
+	
+	# case (3): both keyword and elf were found to the right
+	else:
+		# if the elf name was found first?
+		if (nextElf < nextKey):
+			distanceToElf = nextElf - (whereIsKeyword + len(keyword))
+			if (distanceToElf <= MAX_SEPARATION):
+				return distanceToElf
+			else:
+				return 0
+		else:
+			return 0
+
+# end lookRight()    
+#__________________________________________________________________________________
+
+
+
+
+#-----------------------------------------------------
+if __name__ == '__main__':
+    main()
+#-----------------------------------------------------

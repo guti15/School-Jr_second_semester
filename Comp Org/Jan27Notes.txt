@@ -1,0 +1,59 @@
+# -*- mode: org -*-
+
+* Post- PC Era 
+  + PMD :: Personal Mobile Devices
+  + Cloud Computing :: Cloud Computing 
+  + Software As Service  :: SAS
+*Eight Great Ideas*
+
+* Performance
+  -Vm how?
+  - Metrics?
+ 
+
+ie. 
+| cars          |   hp |  0-60 | torque |
+|---------------+------+-------+--------|
+| Porche boxter |  201 |   6.9 |    181 |
+| BMW 328i      |  190 |   6.4 |    207 |
+| ------------- | ---- | ----- | ------ |
+ 
+** Response Time - Execution Time :: How long one Job takes
+
+** Thouroughput :: Total Amount of work Done/ Time 
+
+- P = performance
+- E = Execution 
+- P = (1/E)
+  comp A  it takes 20 sec to run 
+  comp B takes 16 sec
+- P_A = 0.85s
+- P_B = 0.0625s
+
+*** E = Elapse time = Response Time = wall clock - total time from start of job until job is complete.
+
+*** CPU Time = CPU time spent on Job 
+    -No i/O , etc
+User CPU Time - CPU time spent on user program 
+
+** system CPU time " " " " an OS in support of User 
+   - % n ./ my program 
+
+
+| 0.05 U   |       0.01 |           0:02:67 |                 2.2% |
+|----------+------------+-------------------+----------------------|
+| user CPU | system CPU | Totl Elapsed Time | (user-systm)/elapsed |
+|          |            |                   |                      |
+
+Hardware Metrics::.
+| Item      | Notation | Size                 |
+|-----------+----------+----------------------|
+| Bit       | b        | stores either I or O |
+| byte      | B        | 8 Bits               |
+| KiloByte  | KB       | 10^3 bytes = 1000    |
+| Kibibyte  | KiB      | 2^10 Byte = 1024     |
+| Megabyte  | MB       | 10^6 = 1 000 000     |
+| Membibyte | MiB      | 2^20                 |
+|           | GiB      | 2^30                 |
+|           | TiB      | 2^40                 |
+

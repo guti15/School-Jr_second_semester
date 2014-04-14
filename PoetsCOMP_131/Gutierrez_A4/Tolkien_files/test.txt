@@ -1,0 +1,3 @@
+foo tall elf foo Legolas foo Idril taller tall Legolas
+012345678901234567890123456789012345678901234567890123
+testing unicode: Khazad-dûm  ... Lothlórien

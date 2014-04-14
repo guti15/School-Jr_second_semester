@@ -1,0 +1,3 @@
+# -*- mode:org -*- 
+
+Html and XMl are mark up languages 

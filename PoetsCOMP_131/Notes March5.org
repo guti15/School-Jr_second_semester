@@ -1,0 +1,7 @@
+find with regex : 
+
+
+tall----------------- Legolas (or any elf name) ---------------tall 
+
+
+tall can be substituted with any large synonyms 

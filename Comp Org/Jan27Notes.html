@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Jan27Notes</title>
+<!-- 2014-01-29 Wed 01:16 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Robert Gutierrez" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Jan27Notes</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Post- PC Era</a></li>
+<li><a href="#sec-2">2. Performance</a>
+<ul>
+<li><a href="#sec-2-1">2.1. Response Time - Execution Time :: How long one Job takes</a></li>
+<li><a href="#sec-2-2">2.2. Thouroughput :: Total Amount of work Done/ Time</a>
+<ul>
+<li><a href="#sec-2-2-1">2.2.1. E = Elapse time = Response Time = wall clock - total time from start of job until job is complete.</a></li>
+<li><a href="#sec-2-2-2">2.2.2. CPU Time = CPU time spent on Job</a></li>
+</ul>
+</li>
+<li><a href="#sec-2-3">2.3. system CPU time " " " " an OS in support of User</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Post- PC Era</h2>
+<div class="outline-text-2" id="text-1">
+<dl class="org-dl">
+<dt> PMD </dt><dd>Personal Mobile Devices
+</dd>
+<dt> Cloud Computing </dt><dd>Cloud Computing 
+</dd>
+<dt> Software As Service  </dt><dd>SAS
+</dd>
+</dl>
+<p>
+<b>Eight Great Ideas</b>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Performance</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+-Vm how?
+</p>
+<ul class="org-ul">
+<li>Metrics?
+</li>
+</ul>
+
+
+<p>
+ie. 
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">cars</th>
+<th scope="col" class="right">hp</th>
+<th scope="col" class="right">0-60</th>
+<th scope="col" class="right">torque</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">Porche boxter</td>
+<td class="right">201</td>
+<td class="right">6.9</td>
+<td class="right">181</td>
+</tr>
+
+<tr>
+<td class="left">BMW 328i</td>
+<td class="right">190</td>
+<td class="right">6.4</td>
+<td class="right">207</td>
+</tr>
+
+<tr>
+<td class="left">-------------</td>
+<td class="right">----</td>
+<td class="right">-----</td>
+<td class="right">------</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Response Time - Execution Time :: How long one Job takes</h3>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Thouroughput :: Total Amount of work Done/ Time</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>P = performance
+</li>
+<li>E = Execution 
+</li>
+<li>P = (1/E)
+comp A  it takes 20 sec to run 
+comp B takes 16 sec
+</li>
+<li>P<sub>A</sub> = 0.85s
+</li>
+<li>P<sub>B</sub> = 0.0625s
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-2-2-1" class="outline-4">
+<h4 id="sec-2-2-1"><span class="section-number-4">2.2.1</span> E = Elapse time = Response Time = wall clock - total time from start of job until job is complete.</h4>
+</div>
+
+<div id="outline-container-sec-2-2-2" class="outline-4">
+<h4 id="sec-2-2-2"><span class="section-number-4">2.2.2</span> CPU Time = CPU time spent on Job</h4>
+<div class="outline-text-4" id="text-2-2-2">
+<p>
+    -No i/O , etc
+User CPU Time - CPU time spent on user program 
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> system CPU time " " " " an OS in support of User</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>% n ./ my program 
+</li>
+</ul>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">0.05 U</th>
+<th scope="col" class="left">0.01</th>
+<th scope="col" class="left">0:02:67</th>
+<th scope="col" class="left">2.2%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">user CPU</td>
+<td class="left">system CPU</td>
+<td class="left">Totl Elapsed Time</td>
+<td class="left">(user-systm)/elapsed</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Hardware Metrics::.
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">Item</th>
+<th scope="col" class="left">Notation</th>
+<th scope="col" class="left">Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">Bit</td>
+<td class="left">b</td>
+<td class="left">stores either I or O</td>
+</tr>
+
+<tr>
+<td class="left">byte</td>
+<td class="left">B</td>
+<td class="left">8 Bits</td>
+</tr>
+
+<tr>
+<td class="left">KiloByte</td>
+<td class="left">KB</td>
+<td class="left">10<sup>3</sup> bytes = 1000</td>
+</tr>
+
+<tr>
+<td class="left">Kibibyte</td>
+<td class="left">KiB</td>
+<td class="left">2<sup>10</sup> Byte = 1024</td>
+</tr>
+
+<tr>
+<td class="left">Megabyte</td>
+<td class="left">MB</td>
+<td class="left">10<sup>6</sup> = 1 000 000</td>
+</tr>
+
+<tr>
+<td class="left">Membibyte</td>
+<td class="left">MiB</td>
+<td class="left">2<sup>20</sup></td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">GiB</td>
+<td class="left">2<sup>30</sup></td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">TiB</td>
+<td class="left">2<sup>40</sup></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Robert Gutierrez</p>
+<p class="date">Created: 2014-01-29 Wed 01:16</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.4)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

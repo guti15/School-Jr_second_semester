@@ -1,0 +1,84 @@
+% Created 2014-01-29 Wed 11:42
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\author{Robert Gutierrez}
+\date{\today}
+\title{Jan29}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.3.1 (Org mode 8.2.5g)}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+
+Lab 3: 3:30 -5:20 Thursday 2/6
+
+\section{F-E Cycle}
+\label{sec-1}
+\begin{enumerate}
+\item Get Instr
+\item Interpret Instrc  :: Binary Instructions
+\item Execute Instrc
+\item Go to 1
+\end{enumerate}
+
+\subsection{Cylces}
+\label{sec-1-1}
+\begin{itemize}
+\item Clock Cycle = CC
+\item Clock Period - Time @ start of a CC to start of Next CC
+\item Clock Rate (CR) - 1 / Clock Period 
+\begin{itemize}
+\item \# cycles / seconds
+\end{itemize}
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{ll}
+speed & cycle/sec\\
+\hline
+MHz & 10$^{\text{6}}$\\
+GHz & 10$^{\text{9}}$\\
+THz & 10$^{\text{12}}$\\
+\end{tabular}
+\end{center}
+\subsection{CPU Time (t) (in seconds) =   ( \# clock cycles ina  program ) / (Clock Rate)}
+\label{sec-1-2}
+
+
+T = (CC) / (CR) 
+\begin{itemize}
+\item Instruction = I
+\item Instruction Count = IC - Depends on Architecture -> Assembly Languge
+\item Cylces per Instructions = CPI - Average \# of cylecs  Needed to process each Instruction
+\item often Average of ALL Instructions In Instruction set
+\end{itemize}
+
+
+CPI = (CC) / (IC) 
+
+\begin{itemize}
+\item CPU Time T = ( IC x CPI) / (CR)
+\end{itemize}
+example :: 
+% Emacs 24.3.1 (Org mode 8.2.5g)
+\end{document}

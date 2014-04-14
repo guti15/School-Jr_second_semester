@@ -1,0 +1,83 @@
+<tei.2 id="T00130">
+<teiheader>
+<filedesc>
+<titlestmt>
+<title type="st">Az</title>
+<title type="ss">Az</title></titlestmt>
+<editionstmt><edition n='2'><date>January 2000</date></edition></editionstmt>
+<extent>~11 KB, 53 citations</extent>
+<publicationstmt><publisher>Dictionary of Old English</publisher>
+<address><addrline>130 St. George St. Rm. 14285</addrline>
+<addrline>University of Toronto</addrline>
+<addrline>Toronto, Ontario</addrline>
+<addrline>M5S 3H1</addrline>
+<addrline>CANADA</addrline>
+</address>
+<idno>A3.3</idno>
+<availability><p>
+We ask that you not copy and/or (re)distribute the corpus without the written consent of the Dictionary of Old English.  The individual scholar must take responsibility for clearing copyright with the editors and publishers of the editions used in his/her own citations of the material.</p></availability></publicationstmt>
+<sourcedesc><bibl>Azarias:<author n="Krapp and Dobbie 1936">Krapp and Dobbie 1936,</author>88-94 <edition><title>The Exeter Book</title>, ASPR 3 (New York)</edition>.</bibl></sourcedesc></filedesc>
+<encodingdesc><refsdecl><p>
+Cited by line no. following ed.</p></refsdecl></encodingdesc>
+<profiledesc><textclass><catref target="V"></textclass></profiledesc>
+<revisiondesc><change><date>January 2000</date>
+<respstmt><name>DOE</name><resp>staff</resp></respstmt><item>
+Updated the bibliographic information from the Healey-Venezky "List of Texts".
+</item>
+</change></revisiondesc></teiheader>
+<text><body><p>
+<s id="T00130000100" n="1"> Him &t;a Azarias inge&t;oncum hleo&t;rede halig &t;urh hatne lig, dreag d&ae;dum georn, dryhten herede, wis in weorcum, ond &t;as word acw&ae;&d;: Meotud allwihta, &t;u eart meahtum swi&d; ni&t;as to nerganne.</s>
+<s id="T00130000200" n="6"> Is &t;in noma m&ae;re, wlitig ond wuldorf&ae;st ofer wer&t;eode.</s>
+<s id="T00130000300" n="8"> Sindon &t;ine domas on d&ae;da gehwam so&d;e geswi&d;de ond gesigef&ae;ste, eac <corr>&t;ine</corr> willan in woruldspedum ryhte mid r&ae;de.</s>
+<s id="T00130000400" n="11"> Rodera waldend, geoca us georne, g&ae;sta scyppend, ond &t;urh hyldo help, halig dryhten, nu we &t;ec for &t;earfum ond for &t;reanydum ond fore ea&d;medum arena bidda&t;, lege bilegde.</s>
+<s id="T00130000500" n="16"> We &t;&ae;s lifgende worhton in worulde, eac &t;on wom dydon yldran usse, in oferhygdum &t;in bibodu br&ae;con burgsittende, had oferhogedon halgan lifes.</s>
+<s id="T00130000600" n="21"> Wurdon we towrecene geond widne grund, heapum tohworfne, hylda lease; w&ae;s ure lif geond londa fela fracu&d; ond gefr&ae;ge foldbuendum.</s>
+<s id="T00130000700" n="25"> Nu &t;u usic bewr&ae;ce in &t;as wyrrestan eor&d;cyninges &ae;htgewealda, in h&ae;ft heorogrimmes, sceolon we &t;&ae;r h&ae;&t;enra &t;reanyd <corr>h&ae;fdes</corr> to Abrahame ond to Isace ond Iacobe, g&ae;sta scyppend.</s>
+<s id="T00130000800" n="32"> &T;u him gehete &t;urh hleo&t;orcwidas &t;&ae;t &t;u hyra fromcynn on fyrndagum ycan wolde, &t;&ae;t hit &ae;fter him on cyneryce cenned wurde, yced on eor&t;an, &t;&ae;t swa unrime, had to hebban, swa heofonsteorran buga&d; bradne hwearft o&d; brimflodas, swa waro&t;a sond ymb sealt w&ae;ter, y&t;e geond eargrund, &t;&ae;t swa unrime ymb wintra hwearft weor&d;an sceolde.</s>
+<s id="T00130000900" n="42"> Fyl nu &t;a frumspr&ae;ce, &t;eah &t;e user fea lifgen, wlitega &t;ine wordcwidas ond &d;in wuldor us.</s>
+<s id="T00130001000" n="44"> Gecy&d; cr&ae;ft ond meaht, nu &t;ec Caldeas ond eac fela folca gefregen habban &t;&ae;t &t;u ana eart ece dryhten, sigerof settend ond so&d; meotod, wuldres waldend ond woruldsceafta.</s>
+<s id="T00130001100" n="49"> Swa se halga wer hergende w&ae;s meotudes miltse, ond his modsefan rehte &t;urh reorde.</s>
+<s id="T00130001200" n="51"> &D;a of roderum wear&d; engel &ae;lbeorhta ufon onsended, wlitescyne wer in his wuldorhoman, cwom him &t;a to are ond to ealdornere &t;urh lufan ond &t;urh lisse.</s>
+<s id="T00130001300" n="55"> Se &t;one lig tosceaf, halig ond heofonbeorht, hatan fyres, &t;&ae;t se bittra bryne beorgan sceolde for &t;&ae;s engles ege &ae;f&ae;stum &t;rim.</s>
+<s id="T00130001400" n="59"> Tosweop ond toswengde &t;urh swi&d;es meaht liges leoman, swa hyra lice ne scod, ac w&ae;s in &t;am <corr>ofne</corr>, &t;a se engel cwom, windig ond wynsum, wedere onlicust, &t;onne on sumeres tid sended weor&t;e&d; dropena dreorung mid d&ae;ges hwile.</s>
+<s id="T00130001500" n="65"> Se w&ae;s in &t;am fire for frean meahtum halgum to helpe.</s>
+<s id="T00130001600" n="66"> Wear&d; se hata lig todrifen ond todw&ae;sced, &t;&ae;r &t;a d&ae;dhwatan &t;ry mid ge&t;oncum &t;eoden heredon, b&ae;don <corr>bletsian</corr> bearn in worulde ealle gesceafte ecne dryhten, &t;eoda waldend.</s>
+<s id="T00130001700" n="71"> Swa hi &t;ry cw&ae;don, modum horsce, &t;urh gem&ae;ne word: Bletsige &t;ec, bilwit f&ae;der, woruldsceafta wuldor ond weorca gehwylc, heofonas ond englas ond hluttor w&ae;ter, ond eal m&ae;gen eor&t;an gesceafta.</s>
+<s id="T00130001800" n="77"> Bletsige &t;ec, so&d;f&ae;st cyning, sunne ond <corr>mona</corr>, leohte leoman, lifgende god, h&ae;dre ond hlutre ond heofondreame w&ae;stem weor&d;ian.</s>
+<s id="T00130001900" n="80"> Ful oft &t;u, wuldorcyning, &t;urh lyft l&ae;test leodum to freme mildne morgenren.</s>
+<s id="T00130002000" n="82"> Monig sceal si&t;&t;an wyrt onw&ae;cnan, eac &t;on wudubearwas tanum tydra&d;.</s>
+<s id="T00130002100" n="84"> Trymma&d; eor&d;welan, hleo&d; ond hluttra&d;.</s>
+<s id="T00130002200" n="85"> N&ae;fre hlisan ah meotud &t;an maran &t;onne he wi&d; monna bearn wyrce&d; weld&ae;dum.</s>
+<s id="T00130002300" n="87"> Wis bi&d; se &t;e con ongytan &t;one geocend, &t;e us eall good syle&d; &t;e we habba&d; &t;enden we her beo&d;, ond us milde meotod mare gehate&d;, gif we geearnia&d;, elne willa&d;, &d;onne feran sceal &t;urh frean h&ae;se sundor anra gehw&ae;s sawl of lice.</s>
+<s id="T00130002400" n="94"> Ond &t;ec, god dryhten, g&ae;stas hergen, byrnende fyr ond beorht sumor, wearme wederdagas, waldend manna, frean on fer&d;e.</s>
+<s id="T00130002500" n="97"> Fremest eor&d;welan &t;urh monigne had, milde dryhten, ond &t;ec d&ae;g ond niht, domf&ae;st cyning, lofigen ond <corr>lufigen</corr>, <foreign>lux et tenebre</foreign>, &t;e &t;as wer&t;eoda weardum healda&d;.</s>
+<s id="T00130002600" n="102"> Deop dryhtnes bibod drugon hi &t;&ae;t longe.</s>
+<s id="T00130002700" n="103"> Ond &t;ec, Crist cyning, ceolas weor&d;ian, f&ae;der, forst ond snaw, folca waldend, winterbitera weder ond wolcna genipu, ond &t;ec liexende ligetta hergen, blace, breahtumhwate, brytenrices weard, dyrne dryhten.</s>
+<s id="T00130002800" n="108"> A &t;in dom sy god ond genge.</s>
+<s id="T00130002900" n="109"> &T;u &t;&ae;s geornlice wyrcest, wuldorcyning.</s>
+<s id="T00130003000" n="110"> W&ae;stmum herge, bletsien bledum, ond &t;in bl&ae;d wese a for&d; ece, &ae;lmihtig god.</s>
+<s id="T00130003100" n="113"> Wesa&d; ond weaxa&d; ealle wer&t;eode, lifga&d; bi &t;am lissum &t;e us se leofa cyning, ece dryhten, &ae;r gesette sinum bearnum to brice, bremen dryhten.</s>
+<s id="T00130003200" n="117"> Ond &t;ec, halga god, hea duna geond middangeard miltsum hergen, f&ae;ger folde ond f&ae;der rice.</s>
+<s id="T00130003300" n="120"> For&d;on waldend scop wudige moras, lofe leanige leohtes hyrde.</s>
+<s id="T00130003400" n="122"> Bletsige &t;ec, so&d;f&ae;st cyning, s&ae;s ond w&ae;tra hea holmas, haligne dryhten, domlice deop w&ae;ter; ond dryhtnes bibod geofonfloda gehwylc georne bihealde&d;, &t;onne merestreamas meotudes r&ae;swum w&ae;ter onwealca&d;.</s>
+<s id="T00130003500" n="127"> Witon ealdgecynd &t;&ae;t &ae;r gescop ece dryhten lagufloda bigong, leohtes hyrde, on &t;am wunia&d; widferende si&d;e on sunde seldlicra fela.</s>
+<s id="T00130003600" n="132"> Bletsien &t;ec &t;a ealle, ece dryhten, &t;urh &t;inne willan, <corr>wuldorf&ae;st</corr> cyning, ond &t;ec ealle &ae;sprynge, ece dryhten, heanne hergen.</s>
+<s id="T00130003700" n="135"> Ful oft &t;u hluttor l&ae;test w&ae;ter wynlico to woruldhyhte of clife cl&ae;num.</s>
+<s id="T00130003800" n="137"> &T;&ae;t us se cyning gescop monnum to miltse ond to m&ae;geneacan.</s>
+<s id="T00130003900" n="139"> Bletsien &t;ec, bilwit f&ae;der, fiscas ond fuglas, felameahtigne, ealle &t;a &t;e onhrera&d; hreo w&ae;gas on &t;am bradan brime, bremen dryhten, hergen haligne, ond <corr>heofonfuglas</corr>, &t;a &t;e lacende geond lyft fara&d;.</s>
+<s id="T00130004000" n="145"> Bletsien &t;ec, dryhten, deor ond nyten.</s>
+<s id="T00130004100" n="146"> Meotud monna bearn miltsum hergen ond ecne god, Israhela cynn.</s>
+<s id="T00130004200" n="148"> Bletsien &t;e &t;ine <corr>sacerdas</corr>, <corr>so&d;f&ae;st</corr> cyning, milde m&ae;sseras m&ae;rne dryhten, ond &t;ine <corr>&t;eowas</corr>, &d;eoda hyrde, swylce haligra hluttre saule, ond, ece god, ea&d;modheorte.</s>
+<s id="T00130004300" n="153"> Nu &t;ec Ananias ond Azarias ond Misahel, meotud, miltsum herga&d;.</s>
+<s id="T00130004400" n="155"> Nu we geonge &t;ry god bletsia&d;, felameahtigne f&ae;der in heofonum, &t;one so&d;an sunu ond &t;one sigef&ae;stan g&ae;st.</s>
+<s id="T00130004500" n="158"> For&t;on us onsende sigora waldend engel to are, se &t;e us bearg fyr ond feondas, ond mid fi&t;rum bewreah wi&d; brynebrogan.</s>
+<s id="T00130004600" n="161"> Breahtmum hwurfun ymb &t;&ae;t hate hus h&ae;&d;ne leode, &d;a &t;&ae;t ongeaton godes ondsacan &t;&ae;t hi ne meahtan, ne meotod wolde, acwellan cnyhta &ae;, ac hy Crist scilde.</s>
+<s id="T00130004700" n="166"> Hwearf &t;a to healle, swa he hra&t;ost meahte, eorl acolmod, &t;&ae;t he ofer his ealdre gestod.</s>
+<s id="T00130004800" n="168"> Abead &t;a for &t;&ae;re dugu&d;e deop &ae;rende, haligra gehyld, hlyst w&ae;s &t;&ae;r inne, gromhydig guma: &t;&ae;t ic geare wiste, &t;&ae;t we III h&ae;fdon, &t;eoda <corr>wisa</corr>, geonge cniehtas, for g&ae;stlufan gebunden to b&ae;le in byrnendes fyres leoman.</s>
+<s id="T00130004900" n="174"> Nu ic &t;&ae;r IIII men <corr>seo</corr> to <corr>so&d;e</corr>, nales me sylfa gerad.</s>
+<s id="T00130005000" n="176"> Hweorfa&d; nu &ae;fter heor&d;e, n&ae;ngum hat sce&t;e&d;, ofnes &ae;led, ac him is engel mid, hafa&d; beorhtne bl&ae;d; ne m&ae;g him bryne sce&t;&t;an wlitigne wuldorhoman.</s>
+<s id="T00130005100" n="179"> &D;a &t;am wordum swealg brego Caldea, gewat &t;a to &t;am bryne gongan anhydig eorl, &t;&ae;t he ofer &t;am ade gestod.</s>
+<s id="T00130005200" n="182"> Het &t;a of &t;am lige lifgende bearn Nabocodonossor near &ae;tgongan.</s>
+<s id="T00130005300" n="184"> Ne forhogodon &t;&ae;t &t;a halgan, si&t;&t;an hi hw&ae;tmode woruldcyninges weorn gehyrdon, ac eodon of &t;am fyre, feorh unwemme, wuldre gewlitegad, swa hyra w&ae;dum ne scod gifre gleda <corr>ni&d;</corr>, ac hi mid g&ae;stlufan synne geswencton ond gesigef&ae;ston, modum gleawe, in mon&t;eawum, &t;urh fore&t;oncas fyr gedygdon.</s>
+</p></body></text></tei.2>
+

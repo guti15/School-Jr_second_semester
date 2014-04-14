@@ -1,0 +1,53 @@
+#----------------------------------------------------------------------------#
+# example3.a
+# Joe Schmoe
+# Purpose: try out an array
+# Input:   one integer, x
+# Output:  the array, with one item changed to x (12x4)
+#----------------------------------------------------------------------------#
+	.data
+instr:	.asciiz	"Enter an integer: "
+outstr: .asciiz "Array is: "
+endl:	.asciiz "\n"
+list: 	.space 60
+text: 	.asciiz "Sorted list of integers are: " 
+#----------------------------------------------------------------------------#
+	.text
+	.globl main
+main:
+	la 	$a1, list
+read_numbers: 
+ 	li $v0, 4
+    la $a0, instr		# prints out the mssg that says Enter an integer: 
+    syscall
+
+    li $v0, 5			# Reads integer and loads them to v0 
+    syscall
+
+    sw $t0,	
+    
+    li 	$v0,4 
+    la  $a0, $t0
+
+    #beqz $v0, sort
+#    j read_numbers
+
+#sort:
+    #la $a1, $list
+
+    #li $v0, 4
+    #la $a0, text
+    #syscall
+
+#loop:
+#    lw $t0, 0($a1)
+#    addiu $a1, $a1, 4
+
+#    beqz $t0, done
+
+#    li $v0, 1
+#   move $a0, $t0
+#   syscall
+
+#    j loop
+done: 

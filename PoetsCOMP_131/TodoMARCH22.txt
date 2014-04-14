@@ -1,0 +1,36 @@
+# -*- mode:org -*- 
+
+
+** create a README file: 
+
+   - python file ( with descriptions)
+   - Csv file
+   - .xls file
+   - docx (files may be example , but give brief explanation of the zip file)
+   - your submitting a report 
+
+
+*** should I have 5 charts ? open ended -- 
+
+
+*** searches: 
+    - Text Mining
+    - Stylist
+    - computer-Aided
+    - digital
+    - digital humanities 
+
+*** Resources 
+    - Have at least 3 journals that connect
+    - for final project , there is going to be a small Final Paper (5 pg)
+    - There needs to be evidence. 
+      
+*** oncourse: 
+    MON - from digitized texts to scripts to Excel to report
+    
+    1. Word: counting, readability scores, regex
+    2. when Word isn't enough ... "ta dah: Python!"
+    3. mocking up comma-separated results
+    4. working in Excel
+    5. formatting Table of results
+    6. from Excel into Word
