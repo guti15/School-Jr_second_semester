@@ -20,7 +20,7 @@ main:
 	li	$v0, 5
 	syscall				
 	
-	la	$a0, myNum		#load the usr input into myNum space 
+	la	$a0, myNum		#load the usr input into myNum space
 	li	$a1,8   		# the byte space 
 	move 	$t0, $a0
 	syscall 			
