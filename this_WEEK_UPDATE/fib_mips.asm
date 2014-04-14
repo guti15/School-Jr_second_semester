@@ -24,7 +24,7 @@ main:
 
 	li 	$a1, 8 			# the byte space for the usr input
 	move 	$t0, $a0		# save the user input into $t0
-	sycall
+	syscall
 	
 	la 	 $a0 , myNUM 		# print out our NUMBER
 	li 	 $v0,  1 		# print out the Number we have
