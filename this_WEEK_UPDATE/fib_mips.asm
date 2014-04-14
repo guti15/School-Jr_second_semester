@@ -17,11 +17,13 @@ main:
 	li 	$v0, 4 			# print out mssg
 	syscall  
 
-	li	$v0, 5			# stores in number user input 
-	syscall				
+	li	$v0, 5			# stores in number user input
 	la 	$a0, myNUM		#hopefully sotre the usr input 8
+	syscall
+
 
 	
+
 	li 	$a1, 8 			# the byte space for the usr input
 	move 	$t0, $a0		# save the user input into $t0
 	sycall
