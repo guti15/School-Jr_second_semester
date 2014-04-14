@@ -22,14 +22,13 @@ main:
 	syscall
 
 
-	
-
 	li 	$a1, 8 			# the byte space for the usr input
 	move 	$t0, $a0		# save the user input into $t0
 	sycall
 	
-	la 	
-	
+	la 	 $a0 , myNUM 		# print out our NUMBER
+	li 	 $v0,  1 		# print out the Number we have
+	syscall
 	
 	li 	 $v0 , 10 		# End program FIN 
 	syscall
