@@ -1,0 +1,145 @@
+# Robert Gutierrez 
+
+
+#summery: This program at the moment accepts User input for the  type of payment, gas, and amount of gallons.
+	#the user input are stored in memorey for later refrence, and ease of displaying in console.  It however lacks to
+	#quite using 'q'  or 'Q'.  It mostly just reads and spits out user input.
+
+#input:	 Asks a series of questions, and user must enter method of pay, type of gas, and quantity(gallons)
+
+#output:	 It displays what you have entered.  Including the Floating point number.
+	
+# quick note originally constructed with  .asm extension (not, sure if much of a diffrence)
+#----------------------------------------------------------------------------#
+	.data
+instr:	  .asciiz  "Method of Pay. S = Smaht pay & C = Credit Purchase(Q to quit): "
+outstr:   .asciiz "Your recipt: \n"
+choose:	  .asciiz "You chose payment: "
+info:	  .asciiz "you choose gas: "
+gaspref:  .asciiz "Type of Gas: S=super P=plus R=regular: "
+gallswant:.asciiz "How many gallons do you want: "
+quit:	  .asciiz "q\n"
+fueling:  .asciiz "fueling up: \n "
+wrapUp:	  .asciiz "\nDone.\n"
+tempflt:  .float 0.0
+
+bye:	  .asciiz "GOOD BYE \n"
+whichGas: .space 8
+payment:  .space 8
+howMuch:  .space 40
+Gas:	  .space 8
+
+ 
+
+#---------------------------------------------------------------------------
+	.text
+	.globl main
+main:
+	li	$v0, 4		# op code for print string 
+	la	$a0, instr
+	syscall
+	
+	jal getpay   		 # jumps into the function that grabs user info
+
+# need to check if user input is a q or Q ? --- look into compare
+	la $t7, quit
+	la $t6, payment
+	
+	beq $t7,$t6, fin   	# beq was intended to branch off and quit, but does not fucntion well 
+	
+	la $a0,gaspref
+	li $v0,4
+	syscall
+	
+	jal typegas
+
+	la $a0,info		# print out ' you choose gas'
+	li $v0, 4
+	syscall
+	
+	la $a0,whichGas		# prints out user input
+	li $v0, 4
+	syscall
+
+	la $a0,gallswant 	# print 'how many gallons do I want'
+	li $v0,4
+	syscall
+
+	jal getgallons
+
+	#
+	#
+	#
+	
+	la $a0,fueling		# print 'fueling up : '
+	li $v0,4
+	syscall
+
+	mov.s  $f12,$f0		# print users Input for Gas
+	li  $v0,2
+	syscall
+
+	la $a0,wrapUp
+	li $v0,4
+	syscall
+
+	
+	li $v0,10 		# ends the program
+
+	syscall
+
+
+
+
+# ---------------------------------------------------------------------------
+getpay:
+
+	li	$v0, 8		# v0 stores user's input   8 Read string
+	la	$a0, payment	#hopefully will store user input in payment
+	syscall
+	li 	$a1, 8		# the byte space
+	move 	$t0, $a0	# save the user input into t0
+
+#	la $a0,payment
+#	li $v0,4
+#	syscall    		 (3) Debugger to make sure user input was there 
+	
+	j  $ra
+	
+# ---------------------------------------------------------------------------
+typegas:	
+
+	li	$v0, 8		# v0 stores user's input   8 Read string
+	la	$a0, whichGas	#hopefully will store user input in payment
+	syscall
+	
+	li 	$a1, 8		# the byte space
+	move 	$t0, $a0	# save the user input into t0
+
+#	la $a0,payment
+#	li $v0,4
+#	syscall    		# Debugger to make sure user input was there 
+	
+	j  $ra
+
+# ---------------------------------------------------------------------------
+getgallons:
+
+	li	$v0,6
+	mov.s  	$f4,$f0
+	syscall
+
+	j $ra
+
+
+	
+# --------------------------------------------------------------------------
+# function did not work as well as I wanted. 
+fin:
+
+	la $a0,bye
+	li $v0,4
+	syscall
+
+	li $v0,10
+	syscall
