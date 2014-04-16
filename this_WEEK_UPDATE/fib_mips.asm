@@ -30,6 +30,12 @@ main:
 	li 	 $v0,  1 		# print out the Number we have
 	syscall
 	
+	
+#  -----------------------------------------------------------------------------------
 	li 	 $v0 , 10 		# End program FIN 
 	syscall
 	
+# got the numeber now I have to call the function
+	# if statement will be branch on equal return # that register with the same number:
+	# else branch not equal and return (create two registers that hold ( fib -1 & fib -2 ) then each of those numbers calls the function again:   ---> and that repeats and
+

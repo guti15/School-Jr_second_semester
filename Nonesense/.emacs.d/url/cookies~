@@ -1,0 +1,21 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '((".facebook.com"
+  [url-cookie "datr" "AR3CUjG2PbCjFzPf4wm-k6O8" "31-Dec-2015 01:25:21.00 GMT" "/" ".facebook.com" nil])
+ ("marmalade-repo.org"
+  [url-cookie "connect.sid" "IA7CB169Xn5hHsgRITheV6P5.1tzACdw%2B4drUtrMwdAPUU%2FQWceI7o74zCGi%2BV%2F8j%2FkA" "Mon, 17 Feb 2014 23:34:39 GMT" "/" "marmalade-repo.org" nil]
+  [url-cookie "httpOnly" nil "Mon, 17 Feb 2014 23:34:39 GMT" "/" "marmalade-repo.org" nil])
+ (".google.com"
+  [url-cookie "HttpOnly" nil "02-Jul-2014 01:25:02.00 GMT" "/" ".google.com" nil]
+  [url-cookie "NID" "67=Gt-edTOSWZ04EtNwJfYUUplZVxe37njR1bgSYtTmPCuf2j2wYWOlGwOnJ0pZBM7stgjbu3X9Nt2T0elPgpnZWi3R5a8Ne_Aby-BZVGUpBbKllIU0esFzjy6-Z5ejJ_lM" "02-Jul-2014 01:25:02.00 GMT" "/" ".google.com" nil]
+  [url-cookie "PREF" "ID=dea455335a79d3b8:FF=0:TM=1388453102:LM=1388453102:S=sjwk0Ayccp3y1r6D" "31-Dec-2015 01:25:02.00 GMT" "/" ".google.com" nil]))
+)
+(setq url-cookie-secure-storage
+ 'nil)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:

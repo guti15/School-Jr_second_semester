@@ -1,0 +1,10 @@
+# -*-mode:org -*-
+
+the Book link is [[http://parrain.narod.ru/][novel]] 
+
+the directror script for the [[http://parrain.narod.ru/][HTML]].  
+
+
+* The Projedct : 
+  The plan is to compare the diolgue from the book to the words in the script and see how true it stays.
+  we get to see how much of the diolgue is uesed in the book ---> onto the Movies. 

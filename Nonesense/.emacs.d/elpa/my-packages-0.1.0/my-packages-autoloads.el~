@@ -1,0 +1,13 @@
+;;; my-packages-autoloads.el --- automatically extracted autoloads
+;;
+;;; Code:
+
+
+(provide 'my-packages-autoloads)
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; no-update-autoloads: t
+;; coding: utf-8
+;; End:
+;;; my-packages-autoloads.el ends here
