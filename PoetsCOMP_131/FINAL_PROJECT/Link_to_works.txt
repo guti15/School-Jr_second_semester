@@ -2,9 +2,18 @@
 
 the Book link is [[http://parrain.narod.ru/][novel]] 
 
+
 the directror script for the [[http://parrain.narod.ru/][HTML]].  
 
 
 * The Projedct : 
   The plan is to compare the diolgue from the book to the words in the script and see how true it stays.
   we get to see how much of the diolgue is uesed in the book ---> onto the Movies. 
+
+
+
+Lets cut out the whole dioluge and go over the script line by line and create a dendogram 
+
+
+lets look at tall elf and see if it can grab all the " quotes".  
+

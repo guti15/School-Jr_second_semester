@@ -46,7 +46,6 @@ main:
 	la $t6, payment
 	
 	beq $t7,$t6, fin   	# beq was intended to branch off and quit, but does not fucntion well 
-	
 	la $a0,gaspref
 	li $v0,4
 	syscall
