@@ -1,5 +1,9 @@
 """
 
+
+what the program is doing at the moment is --> searching for protagonist
+names and then  searching for the ' ' , so maybe I should searh for ' ' and said
+
 What i Need to do is ---->  Read code: lets run first 
 
 
@@ -53,11 +57,11 @@ def main():
 
 	#(0) relative path of directory(folder) containing files of texts
 
-	inputDIR = "FINAL_PROJECT"  #name of Dir 
+	inputDIR = "godfather/"  #name of Dir 
 	
 	#(1)
 	#inputFilename = "test.txt"
-	inputFilename = "godfather.txt"
+	inputFilename = "gdad.txt"
 	#inputFilename = input("\nEnter file to check: ")
 	
 	#(1.1) concatenate pathname and filename	
@@ -71,31 +75,42 @@ def main():
 
 
 #check delete list of elf names: 
-	elfList = ['elf', 'Idril', 'Legolas']
-	
+	#elfList = ['elf', 'Idril', 'Legolas']
+        Novel_protagnist = [ 'vito','corleone','santiago','sonny',
+                             'federico','i','you','he','she','they',
+                             'fredo','michael','mike', 'johnny', 'kay', 'adams']
+
+
+
+        
+        # change novel chart to elf
+        #elfList = [  '"' ]
 	#(2.1) force elf names to lowercase
 	elfList = [name.lower() for name in elfList] # Maybe I should look for single " too
-	
-
+                
         # list of what I do not need,  do not need csv 
         # (1) csv  or marks number (3)
         # 5 is crucial for us
 
 
 	#(3) put output report heren
-	outputFileName = "outputTallElf.csv"	# put the comma-separated report in this file
+	outputFileName = "novel_quotes.txt"	# put the comma-separated report in this file
 	
 
 # ------------------------------------------------------------------------------------
 
 	#(4)	
-	sizeList = ['tall', 'large','taller''tallest', 'giant','alpine']
+
+        sizeList = [ '"', "'", ]  # this is what the program is looking for 
+
+
+	# sizeList = ['tall', 'large','taller''tallest', 'giant','alpine'] 
 	#sizeList = ['tall', 'big', 'large', 'giant', 'lofty', 'huge', 'towering']
 	#(4.1) force adjectives to lowercase
 	sizeList = [name.lower() for name in sizeList]
         
 	#(5) define how close is "close enough"
-	MAX_SEPARATION = 100   # units = characters (letters, including whitespace)
+	MAX_SEPARATION = 220   # units = characters (letters, including whitespace)
 
 	
 	# open INPUT and OUTPUT files
@@ -113,7 +128,7 @@ def main():
     
 	# header line #3 in the report (columns C and D in Excel)
 	# note: initial two commas ensure that we skip columns A and B
-	outputFile.write("%s%sDistance Between words%sActual Text \n" % (DELIMITER, DELIMITER, DELIMITER) )
+	#outputFile.write("%s%sDistance Between words%sActual Text \n" % (DELIMITER, DELIMITER, DELIMITER) )
 	
 	# ok, let 'er rip ...
 	# for each of the ADJECTIVES (one at a time) check all the elf names
@@ -181,11 +196,11 @@ def readText(filename):
 
 
 #-----------------
-# tallElvesOrBust \
+# tallElvesOrBust \  # tallElvesOrBust( text, outputFile, elfList, nextAdjective, MAX_SEPARATION )
 #-----------------------------------------------------------------------------------
 def tallElvesOrBust( text, outputFile, elfList, keyword, MAX_SEPARATION ):
 
-	for elf in elfList:
+	for elf in elfList:    #Grabs the elf name and  keyword(adjective
 	    
 		elf = elf.lower()
 	    
@@ -193,14 +208,14 @@ def tallElvesOrBust( text, outputFile, elfList, keyword, MAX_SEPARATION ):
 		print ("Test distance between %s and %s .... \n\n" % (keyword, elf)	)
 	    
 		# print the line header for this elf in the report
-		outputFile.write("\nLocation of %s%sLocation of %s,,\n" %(keyword, DELIMITER, elf))
+#		outputFile.write("\nLocation of %s%sLocation of %s,,\n" %(keyword, DELIMITER, elf))
 	    
 	
 		# start new statistics for this Elf name
 		sumBetween  = 0
 		numberTimes = 0
 	
-		# keyword (e.g., "tall") is our regex pattern; but make regex smarter
+		# keyword (e.g., "tall") is our regex pattern; but make regex smarterx
 		# (i) make sure keyword is not part of another word (e.g., "tall" in "stall")
 		# that is, make sure it is preceded by a whitespace character (\s)
 		# but (ii) allow hyphenated extensions, e.g., "tall-like" is ok
@@ -237,9 +252,11 @@ def tallElvesOrBust( text, outputFile, elfList, keyword, MAX_SEPARATION ):
 				endSubstring = nCharsInText + locationOfElfName           # location of end of substring
 				theActualText = text[locationOfElfName:endSubstring]      # substring of the actual text
     
-				outputFile.write( "%d,%d,%d,%s\n" % (whereIsKeyword, locationOfElfName, betweenDistance, theActualText))
+				#outputFile.write( "%d,%d,%d,%s\n" % (whereIsKeyword, locationOfElfName, betweenDistance, theActualText))
+                                outputFile.write( theActualText)
+                                outputFile.write( "\n" ) 
 	    
-			# ******************* look RIGHT ******************************************************
+			# ******************* Look RIGHT ******************************************************
 			betweenDistance = LookRight(text, whereIsKeyword, keyword, elf, MAX_SEPARATION)
 			print ("\tDistance between (%s ... %s) is: %d \n\n" % (keyword, elf, betweenDistance) )
 		
@@ -255,7 +272,8 @@ def tallElvesOrBust( text, outputFile, elfList, keyword, MAX_SEPARATION ):
 				endSubstring = nCharsInText+whereIsKeyword                       # location of end of substring
 				theActualText = text[whereIsKeyword:endSubstring]                # substring of hte actual text
     
-				outputFile.write( "%d,%d,%d,%s\n" % (whereIsKeyword, locationOfElfName, betweenDistance, theActualText))
+				outputFile.write( theActualText ) 
+                                outputFile.write( "\n" ) 
 		
 		# -- END matches for this elf name ---------------------------
 		
@@ -406,4 +424,3 @@ def LookRight(text, whereIsKeyword, keyword, elf, MAX_SEPARATION):
 #-----------------------------------------------------
 if __name__ == '__main__':
     main()
-#-----------------------------------------------------

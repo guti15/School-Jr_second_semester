@@ -1,0 +1,488 @@
+input file used in this experiment: godfather/gdad.txt
+MAX characters between words allowed: 200
+
+,,Distance Between words,Actual Text 
+
+Location of ",Location of vito,,
+
+Location of ",Location of corleone,,
+
+Location of ",Location of santiago,,
+
+Location of ",Location of sonny,,
+
+Location of ",Location of federico,,
+
+Location of ",Location of i,,
+
+Location of ",Location of you,,
+
+Location of ",Location of he,,
+
+Location of ",Location of she,,
+
+Location of ",Location of they,,
+
+Location of ",Location of fredo,,
+
+Location of ",Location of michael,,
+
+Location of ",Location of mike,,
+
+Location of ",Location of johnny,,
+
+Location of ",Location of kay,,
+
+Location of ",Location of adams,,
+
+Location of ',Location of vito,,
+435157,434988,165,vito pocketed the bills  he waited  they all understood each other  they knew he had killed fanucd and though they never spoke about it to anyone the whole neighborhood '
+435157,435190,32,' within a^few weeks  also knew  vito
+
+Location of ',Location of corleone,,
+46115,46234,118,' and i wept   bonasera could not speak further  he was weeping now though his voice had not betrayed his emotion  don corleone
+46958,46977,18,'we must go to don corleone
+46998,46977,13,corleone for justice '
+49465,49470,4,'don corleone
+49495,49470,17,corleone give me justice '
+57237,57344,106,' applause  the three of them embraced each other at the end  the guests begged for another song  only don corleone
+58261,58378,116,' i called you five times after my divorce and tom always told me you were out or busy so i knew you were sore   don corleone
+61800,61918,117,'  the mimicry of the don was so extraordinary  so unexpected  that hagen and johnny were startled into laughter  don corleone
+119898,119835,55,corleone assumed the duties of parenthood  indeed he is called '
+145983,145777,198,corleone said   i receive fifty percent merely for finance and legal protection  i have no worries about operations  is that what you tell me   sollozzo nodded   if you think two million dollars in cash is '
+145999,146025,25,' i congratulate you  don corleone
+303083,303194,110,'hagen said   mccluskey is a stupid man and it was business  not personal   for the second time he saw michael corleone
+435157,435195,37,' within a^few weeks  also knew  vito corleone
+663275,663317,41,'em like you scrape a frying pan  freddie corleone
+
+Location of ',Location of santiago,,
+
+Location of ',Location of sonny,,
+165250,165180,65,sonny said  he was fresh from a nap  called to the phone by his wife  '
+
+Location of ',Location of federico,,
+
+Location of ',Location of i,,
+34173,34169,3,id  '
+34173,34180,6,'when wi
+34230,34184,45,i be old enough to hear that story about luca '
+34230,34242,11,' and tom sai
+34246,34242,3,id  '
+34269,34274,4,'   mi
+45485,45468,16,ily  she found a '
+45485,45492,6,'boy fri
+45497,45492,4,iend '
+45497,45506,8,' not an i
+46051,46047,3,in  '
+46051,46073,21,'father  father  why di
+46115,46106,8,is to me '
+46115,46121,5,' and i
+46958,46953,4,ife  '
+46958,46994,35,'we must go to don corleone for justi
+46998,46994,3,ice '
+46998,47020,21,'  the don had bowed hi
+49465,49431,33,ile   now you come to me and say  '
+49465,49480,14,'don corleone gi
+49495,49491,3,ice '
+49495,49517,21,' and you do not ask wi
+49713,49706,6,icry-  '
+49738,49734,3,ing '
+49738,49748,9,' no  no  i
+57237,57222,14,into shouts of '
+57237,57359,121,' applause  the three of them embraced each other at the end  the guests begged for another song  only don corleone  standi
+58223,58209,13,id to myself  '
+58223,58237,13,'my godfather i
+58261,58263,1,' i
+61800,61795,4,i do '
+61800,61808,7,'  the mi
+87869,87856,12,ice that the '
+87871,87890,18,'old man  thought mi
+119898,119888,9,is called '
+145983,145980,2,is '
+145983,145992,8,'merely fi
+145999,145992,6,inance '
+145999,146001,1,' i
+151611,151604,6,ight   '
+151611,151629,17,'  sure   hagen sai
+165250,165245,4,ife  '
+165250,165254,3,' phi
+177665,177624,40,in a couple of years  the don was an old '
+177681,177684,2,' hi
+191186,191188,1,'hi
+193187,193185,1,i '
+234747,234744,2,is '
+236018,235974,43,ing that way  you know what he always says  '
+252491,252479,11,ing about   '
+252491,252494,2,' mi
+271166,271153,12,ion was made '
+271166,271169,2,' mi
+280179,280167,11,im a really '
+280218,280209,8,ion  the '
+293023,293017,5,ight  '
+293023,293035,11,'remember  mi
+297734,297739,4,'soldi
+303083,303067,15,influence you   '
+303083,303092,8,'hagen sai
+311016,310995,20,ike myself  yes  yes '
+311040,311017,22,i know  he says to me  '
+311040,311051,10,'go ahead  i
+311070,311064,5,iness '
+311070,311094,23,' but we both know that i
+312502,312494,7,il then '
+312502,312522,19,'  sollozzo asked  mi
+315332,315329,2,im '
+315332,315334,1,'mi
+321138,321130,7,id yes  '
+321138,321156,17,' sharon moore obvi
+353279,353261,17,ir heads and say  '
+389424,389415,8,id she   '
+389424,389427,2,' ni
+430723,430706,16,ime  he traveled '
+430723,430746,22,'over the rooftops to hi
+435157,435146,10,ighborhood '
+435157,435160,2,' wi
+489405,489364,40,is face became one of scholarly doubt- a '
+489411,489413,1,' i
+491471,491459,11,iv 233 m& & '
+491471,491492,20,' she could never beli
+496363,496359,3,id  '
+496363,496384,20,'  you forget about mi
+595409,595404,4,ity  '
+595409,595434,24,'there was anthony stracci
+604457,604451,5,im my '
+611229,611225,3,ing '
+611229,611242,12,' who can resi
+638461,638429,31,in  after the 300 the godfather '
+638461,638480,18,'legal folderol  whi
+655908,655903,4,into '
+655908,655913,4,'the i
+663275,663265,9,i curette '
+663275,663280,4,'em li
+665936,665925,10,irls for a '
+665944,665973,28,' what we doctors call fellati
+665991,665973,17,io  what you call '
+666018,666021,2,' di
+666048,666044,3,ing '
+672367,672355,11,ice changed '
+672367,672372,4,'getti
+680405,680384,20,i could say the word '
+680412,680428,15,' because your si
+681498,681492,5,ittle '
+681498,681503,4,'danci
+682137,682134,2,is '
+682137,682141,3,'medi
+682258,682261,2,'whi
+701658,701626,31,ichael felt as he had felt when '
+701658,701666,7,'as a chi
+711544,711530,13,ity and deed  '
+711544,711570,25,'had always been wary of hi
+749797,749777,19,illa on some errand '
+749797,749803,5,' outsi
+751368,751341,26,in a room that seemed very '
+751368,751386,17,'dark and heard voi
+794033,794030,2,ie '
+794033,794043,9,' nobody li
+794086,794092,5,'you wi
+794109,794097,11,ie tomorrow '
+794109,794117,7,' well  i
+794844,794839,4,ies  '
+794860,794862,1,' i
+794877,794889,11,'you could di
+794892,794889,2,ie '
+794892,794894,1,' i
+794971,794943,27,ir faces all rosy  and say  '
+794971,794980,8,'doctor  i
+795043,795039,3,it  '
+795043,795048,4,'but i
+795063,795065,1,' i
+795160,795141,18,ile at me and say  '
+795160,795180,19,'but my husband and i
+795208,795204,3,ics '
+796410,796405,4,ing  '
+796458,796464,5,'  so i
+796757,796749,7,inutes  '
+796772,796767,4,inal '
+796772,796774,1,' i
+797043,797039,3,id  '
+797043,797071,27,'what the hell do you mean  i
+797085,797080,4,inal '
+797085,797119,33,'   jules started  to laugh   germi
+861350,861325,24,ig desk   you cannot say '
+861454,861448,5,ike a '
+861494,861514,19,' you have to take ti
+862535,862526,8,ing away '
+862535,862550,14,'and of course i
+876009,875994,14,ight or have a '
+876009,876011,1,'si
+876316,876292,23,ike  they opened up two '
+905334,905329,4,ing  '
+905334,905336,1,'ki
+905352,905345,6,ill me '
+905352,905364,11,' and there i
+908109,908104,4,ive  '
+938350,938320,29,i expected to see some of the '
+
+Location of ',Location of you,,
+34246,34252,5,'when you
+49465,49441,21,you come to me and say  '
+49495,49501,5,' and you
+49713,49725,11,'i will pay you
+49738,49725,10,you anything '
+49738,49801,62,' no  no  i am not offended  but what have i ever done to make you
+58261,58272,10,' i called you
+145983,145942,38,you think two million dollars in cash is '
+145999,146016,16,' i congratulate you
+165250,165147,100,you recognize my voice    yeah   sonny said  he was fresh from a nap  called to the phone by his wife  '
+165250,165307,56,' phillips said quickly without preamble   somebody shot you
+193187,193049,135,you too  when it comes to real action i can operate as good as anybody  short-range  sollozzo knows that and so do clemenza and tessio  i '
+236018,235988,27,you know what he always says  '
+252491,252466,22,you were talking about   '
+280179,280155,21,you to get him a really '
+280218,280197,18,your collection  the '
+303083,303077,3,you   '
+311016,310882,131,your father stands in the way because of certain unrealistic scruples  by doing this he imposes his will on men like myself  yes  yes '
+311070,311056,11,your business '
+312502,312456,43,you want the whole proposition in detail then '
+353279,353307,27,'vote for johnny fontane or you
+353328,353307,18,you are out of a job '
+389424,389395,26,you home with her  did she   '
+491471,491325,143,your mail  of course   kay was horrified and angry  now she could face him  what he had done was more shameful than her own sin  book iv 233 m& & '
+491471,491517,45,' she could never believe it of him   father  you
+496363,496366,2,'  you
+611114,611134,19,'i have powders  if you
+611229,611134,92,you put up the three-  four-thousand-dollar investment we can make fifty thousand distributing '
+663275,663284,8,'em like you
+665936,665805,128,you know what she told me  that those gunslingers  those manly  virile  straight-shooting cowboys would always ask the girls for a '
+665944,665982,37,' what we doctors call fellatio  what you
+665991,665982,6,you call '
+666018,666024,5,' did you
+666048,666024,21,you ever think of doing '
+672367,672380,12,'getting old you
+680405,680335,67,you were a dead man  and i was so delighted when i could say the word '
+680412,680422,9,' because you
+681498,681435,60,you keep that up   valenti was lumbering up to him with little '
+794033,794051,17,' nobody listens  you
+794109,794087,19,you will die tomorrow '
+794109,794128,18,' well  i can tell you
+794892,794878,11,you could die '
+796410,796290,117,you scoop the seeds out of a cantaloupe  after all that she dies anyway  meanwhile husbands keep calling up and asking  '
+797043,797061,17,'what the hell do you
+861350,861335,12,you cannot say '
+861454,861423,28,you do  it has to sound like a '
+861459,861464,4,' or you
+861490,861464,23,you have to make them say '
+861494,861496,1,' you
+862535,862420,112,you would never have suspected  except that i came out alive  i saw fabrizzio going through the gate  running away '
+876009,875983,23,you gotta fight or have a '
+908109,908034,72,you for   she asked  her worried frown made her look old and unattractive  '
+938350,938279,68,you up here to threaten me   she asked   i expected to see some of the '
+
+Location of ',Location of he,,
+34173,34175,1,'whe
+34230,34203,25,hear that story about luca '
+34246,34248,1,'whe
+34269,34409,139,'   michael sipped book i 25 his glass of wine   that must be some story  that must be some luca   luca brasi was indeed a man to frighten the
+45485,45474,9,he found a '
+45497,45516,18,' not an italian  she
+46051,46041,8,her pain  '
+46051,46055,3,'fathe
+46115,46097,16,hey do this to me '
+46115,46159,43,' and i wept   bonasera could not speak furthe
+46958,46935,21,hen i said to my wife  '
+46998,47002,3,'  the
+49465,49398,65,he undertaker a polite  ironic smile   now you come to me and say  '
+49495,49593,97,' and you do not ask with respect  you do not offer me your friendship  you come into my home on the
+57237,57193,42,he whole wedding party broke into shouts of '
+57237,57250,12,' applause  the
+58223,58183,38,he wedding invitation i said to myself  '
+58223,58233,9,'my godfathe
+58261,58413,151,' i called you five times after my divorce and tom always told me you were out or busy so i knew you were sore   don corleone was filling glasses from the
+61800,61804,3,'  the
+87869,87866,1,he '
+87871,87899,27,'old man  thought mike was the
+119898,119885,11,he is called '
+119898,119905,6,'godfathe
+145999,146037,37,' i congratulate you  don corleone   the
+151611,151583,26,he be home tomorrow night   '
+151611,151634,22,'  sure   hagen said   he
+165250,165228,20,he phone by his wife  '
+165250,165315,64,' phillips said quickly without preamble   somebody shot your fathe
+177665,177647,16,he don was an old '
+177665,177673,7,'moustache
+177681,177673,6,he pete '
+177681,177704,22,' his day was over but he
+191186,191173,11,hey can turn '
+191186,191244,57,'him loose or dump him  depending how sollozzo feels  if the
+193187,193059,126,hen it comes to real action i can operate as good as anybody  short-range  sollozzo knows that and so do clemenza and tessio  i '
+234747,234775,27,'too smart   hagen paused   he
+236018,236002,14,he always says  '
+271166,271139,25,he wrong decision was made '
+271166,271187,20,' michael spoke for the
+280179,280059,118,hen we find that out we can figure out how we can get a weapon into his hands  clemenza  i want you to get him a really '
+280218,280215,1,he '
+293023,293013,8,he light  '
+303083,303164,80,'hagen said   mccluskey is a stupid man and it was business  not personal   for the
+311016,310967,47,he imposes his will on men like myself  yes  yes '
+311016,311025,8,'i know  he
+311040,311025,13,he says to me  '
+311040,311045,4,'go ahe
+311070,311134,63,' but we both know that is unrealistic  we must tread on each othe
+312502,312498,2,hen '
+312502,312638,135,'  sollozzo asked  michael said gravely   most important of all i must have sure guarantees that no more attempts will be made on my fathe
+315332,315266,64,hey had gone weak with trembling  sollozzo was leaning toward him '
+315332,315364,31,'michael  his belly covered by the
+321138,321125,11,he said yes  '
+321138,321244,105,' sharon moore obviously expected him to come on very strong because of his reputation  but johnny hated the
+353279,353264,13,heads and say  '
+353328,353330,1,' he
+389424,389419,3,he   '
+389424,389441,16,' nino shook his he
+430723,430711,10,he traveled '
+430723,430730,6,'over the
+435157,435135,20,he whole neighborhood '
+435157,435255,97,' within a^few weeks  also knew  vito corleone was treated as a  man of respect  by everyone  but he
+489405,489358,45,here his face became one of scholarly doubt- a '
+491471,491441,28,her own sin  book iv 233 m& & '
+491471,491474,2,' she
+496363,496335,26,heek very quickly and said  '
+496363,496390,26,'  you forget about mikey  he
+595409,595361,46,he look of no-nonsense busy men without vanity  '
+595409,595411,1,'the
+604457,604422,33,he tattaglia family  i gave him my '
+611114,611100,12,hem and says  '
+611114,611146,31,'i have powders  if you put up the
+611229,611146,81,he three-  four-thousand-dollar investment we can make fifty thousand distributing '
+611229,611266,36,' who can resist such a profit  and the
+638461,638457,2,her '
+638461,638542,80,'legal folderol  which might take a little time  felix bocchicchio would die in the
+655908,655890,16,he went down into '
+655908,655910,1,'the
+663275,663238,35,hey come to me right away  i curette '
+663275,663356,80,'em like you scrape a frying pan  freddie corleone is a real terror  by my count he
+665936,665921,13,he girls for a '
+665991,666000,8,'oh 312 the
+666018,666009,7,her that '
+672367,672337,28,he fact that my voice changed '
+672367,672391,23,'getting old you know   he
+680405,680397,6,he word '
+680412,680461,48,' because your singing gave me so much pleasure  he
+681498,681514,15,'dancing steps  he
+682137,682119,16,he results of his '
+682258,682266,7,'while the
+701658,701654,2,hen '
+701658,701670,11,'as a child he
+711544,711622,77,'had always been wary of him  treating him as a fellow  man of respect   but the
+749797,749773,22,he villa on some errand '
+749797,749814,16,' outside  what the
+751368,751316,50,he came to consciousness in a room that seemed very '
+751368,751378,9,'dark and he
+794109,794191,81,' well  i can tell you that nino may very well die tomorrow   jules went over to the
+794877,794872,3,hem  '
+794971,794941,28,heir faces all rosy  and say  '
+795001,795020,18,' and sure enough the
+795043,795032,9,he rabbit  '
+795208,795211,2,' the
+796410,796347,61,he dies anyway  meanwhile husbands keep calling up and asking  '
+796410,796420,9,'what do the
+796458,796444,12,he tests show '
+796458,796523,64,'  so i hired an extra secretary to take all those calls  i saw the
+796757,796718,37,he husband talk to me for two minutes  '
+797043,797014,27,heard it  one guy even said  '
+797043,797050,6,'what the
+797085,797141,55,'   jules started  to laugh   germinal  terminal  what the
+861350,861321,27,he big desk   you cannot say '
+861454,861419,33,hen you do  it has to sound like a '
+861459,861482,22,' or you have to make the
+861490,861482,6,hem say '
+862535,862513,20,he gate  running away '
+876009,875912,95,he barzinis and tattaglias are going to move in on us real hard  mike  you gotta fight or have a '
+876316,876298,16,hey opened up two '
+905334,905315,17,he world shouting  '
+905352,905359,6,' and the
+908109,908078,29,her look old and unattractive  '
+908109,908128,18,' carlo shrugged   he
+938350,938347,1,he '
+
+Location of ',Location of she,,
+45485,45473,9,she found a '
+45497,45515,17,' not an italian  she
+46051,46024,24,she wept through her pain  '
+321138,321124,11,she said yes  '
+389424,389418,3,she   '
+489405,489347,55,she is a - here his face became one of scholarly doubt- a '
+491471,491381,87,she could face him  what he had done was more shameful than her own sin  book iv 233 m& & '
+491471,491473,1,' she
+496363,496312,48,she kissed her on the cheek very quickly and said  '
+655908,656085,176,'the interior of mexico  the real wild country  he told her  where strangers were murdered for their shoes and life was as primitive as a thousand years ago  quite accidentally she
+665936,665819,114,she told me  that those gunslingers  those manly  virile  straight-shooting cowboys would always ask the girls for a '
+701658,701755,96,'as a child he had gone out early on a summer day to play ball  then each day had been freshly washe
+711544,711662,117,'had always been wary of him  treating him as a fellow  man of respect   but these unsophisticated 334 the godfather  she
+796410,796346,61,she dies anyway  meanwhile husbands keep calling up and asking  '
+796458,796544,85,'  so i hired an extra secretary to take all those calls  i saw the patient only when she
+797085,797229,143,'   jules started  to laugh   germinal  terminal  what the hell  i started  to do abortions  nice and easy  everybody happy  like washing the dishe
+908109,908044,62,she asked  her worried frown made her look old and unattractive  '
+938350,938308,39,she asked   i expected to see some of the '
+
+Location of ',Location of they,,
+46051,45994,53,they had to wire it together  she wept through her pain  '
+46051,46076,24,'father  father  why did they
+46115,46096,15,they do this to me '
+191186,191172,10,they can turn '
+191186,191243,56,'him loose or dump him  depending how sollozzo feels  if they
+315332,315265,63,they had gone weak with trembling  sollozzo was leaning toward him '
+430723,430663,56,they had heard nothing  he could take his time  he traveled '
+435157,435098,55,they never spoke about it to anyone the whole neighborhood '
+496363,496477,113,'  you forget about mikey  he no the man for you anymore   there was a car waiting for her with two men up front  they
+595409,595351,54,they had the look of no-nonsense busy men without vanity  '
+611229,611265,35,' who can resist such a profit  and they
+638461,638373,84,they were proud of him now  but the conclusion was certain  after the 300 the godfather '
+663275,663237,34,they come to me right away  i curette '
+751368,751413,44,'dark and heard voices that were so low that they
+794971,794927,40,they pop in  their faces all rosy  and say  '
+795001,795019,17,' and sure enough they
+795208,795210,1,' they
+797043,797003,36,they never heard it  one guy even said  '
+876316,876297,15,they opened up two '
+905334,905146,184,they do not know  i have seen a man  a fool  deliberately infuriate a group of dangerous men  and he himself without any resources  these are people who wander through the world shouting  '
+
+Location of ',Location of fredo,,
+
+Location of ',Location of michael,,
+34269,34273,3,'   michael
+191186,191337,150,'him loose or dump him  depending how sollozzo feels  if they dump him  it would be just to show us they really mean business  trying to bulldoze us   michael
+252491,252493,1,' michael
+271166,271168,1,' michael
+303083,303186,102,'hagen said   mccluskey is a stupid man and it was business  not personal   for the second time he saw michael
+312502,312521,18,'  sollozzo asked  michael
+701658,701625,26,michael felt as he had felt when '
+711544,711709,164,'had always been wary of him  treating him as a fellow  man of respect   but these unsophisticated 334 the godfather  sheep herders had come to their own opinion of michael
+749797,749701,89,michael was annoyed to see fabrizzio disappearing through the gates of the villa on some errand '
+876316,876188,121,michael said   let them break the peace first   tessio spoke up in his soft voice   they already have  mike  they opened up two '
+908109,908006,96,michael book viii 425 wants you for   she asked  her worried frown made her look old and unattractive  '
+
+Location of ',Location of mike,,
+87871,87889,17,'old man  thought mike
+293023,293034,10,'remember  mike
+496363,496383,19,'  you forget about mike
+876009,875977,28,mike  you gotta fight or have a '
+876316,876291,21,mike  they opened up two '
+938350,938269,77,mike send you up here to threaten me   she asked   i expected to see some of the '
+
+Location of ',Location of johnny,,
+58223,58138,79,johnny fontane said to the don   when i got the wedding invitation i said to myself  '
+61800,61878,77,'  the mimicry of the don was so extraordinary  so unexpected  that hagen and johnny
+321138,321230,91,' sharon moore obviously expected him to come on very strong because of his reputation  but johnny
+353279,353289,9,'vote for johnny
+353328,353289,33,johnny fontane or you are out of a job '
+389424,389335,83,johnny laughed   she can be better than that if she invites you home with her  did she   '
+389424,389507,82,' nino shook his head   i got too interested in the movie   he said  but this time johnny
+794109,794246,136,' well  i can tell you that nino may very well die tomorrow   jules went over to the bar and mixed himself another drink   how about it  johnny
+
+Location of ',Location of kay,,
+87871,87999,127,'old man  thought mike was the best of his sons  the one who would surely inherit the family business   what business is that   kay
+491471,491348,120,kay was horrified and angry  now she could face him  what he had done was more shameful than her own sin  book iv 233 m& & '
+496363,496289,71,kay to the door  there she kissed her on the cheek very quickly and said  '
+496363,496562,198,'  you forget about mikey  he no the man for you anymore   there was a car waiting for her with two men up front  they drove her all the way to her hotel in new york never saying a word  neither did kay
+938350,938169,178,kay had made the mistake of trying to be cruelly flippant  a role to which she was not suited   did mike send you up here to threaten me   she asked   i expected to see some of the '
+
+Location of ',Location of adams,,

@@ -1,0 +1,98 @@
+#-----------------------------------------------------------------------
+#
+#Rober Gutierrez
+# Purpose: Find the n th number in the Fibbinachi sequence (recursivly)
+# and iterate through the list backwards
+#
+# Input: The program will take an input of an integer between 0 and 44.  
+#
+# Output: The program will output the fibonacci sequence in reverse starting with 
+# the nth number from the input. 
+# 
+#--------------------------------------------------------------------------
+	.data
+msg1: .asciiz "Enter A positive Whole number: "
+endl: .asciiz "\n"
+fin: .asciiz "Done\n"
+
+#-------------------------------------------------------------------------
+	#Registers $t0 and $t1 will hold 0 and 1 same as a,b in C++ 
+	# initiate s5 to be a value holder for my math
+	.text
+	.globl main
+
+main:
+	
+	la	$a0, msg1   	 # promt to be int $a0 for print 
+	li	$v0, 4		 # promt to print out string 
+	syscall
+
+
+	li	$v0, 5		# get user input 
+	syscall
+
+	move $t3, $v0		# grab user input and place into register $t3
+
+	li $t0, 0     		# place 0 in register $t0
+	li $t1, 1		# place 1 in register $t1
+	li $t9, 0		# will a our global sum keeper
+	beq $t3, $zero,done	# is t3  == 0 then goes to Done
+
+	jal Fibb    		# Jump and link Fibb
+	
+
+done: 
+	
+	la	$a0, fin
+	li	$v0,4
+	syscall
+
+	li	$v0, 10		# Turn off program  --> FIN
+	syscall
+
+#----------------------------------------------------------------------#
+#	reg $t0 = a 	reg $t1 = b   reg t3= count   reg t9 = fib total
+	.data
+	.text
+
+Fibb:					#Fib function
+
+	subu	$sp, $sp, 32		# size for the stack as we compute
+
+	sw	$ra, 20($sp)		# save the return address
+	sw	$fp, 16($sp)		# save the frame ponter 
+	addu	$fp, $sp, 28		# Then reset the frame pointers
+	
+	sw	$t0, -4($fp)		# save the arguments
+	sw	$t1, 0($fp)
+	
+	move $s0, $t1			#s variables as local
+
+	add $t1, $t1, $t0     	 # add t0 and t1, total value in t1
+	move $t0, $s0    	 
+	subu $t3, $t3, 1	 # count and subtract 1 for each loop
+	
+	beq $t3, $zero, return0	  #check if t3 is zero ,on equal go to, end
+	jal Fibb		  # call back function
+
+	move $a0, $t0		#print out the number in $s0
+	li $v0, 1		# print in function
+	syscall
+
+	add $t9, $t9, $t0	# update the total / save
+
+
+	li $v0, 4		# print out empty line 
+	la $a0, endl		# "\n"
+	syscall
+
+	lw $t1, 0($fp)		# call stack 
+	lw $t0, -4($fp)
+	
+	lw $fp, 16($sp)		# move frame
+	lw $ra, 20($sp)		# old location reg.
+	addu $sp, $sp, 32
+
+return0:	
+	
+	j $ra		# jump back to the equation	

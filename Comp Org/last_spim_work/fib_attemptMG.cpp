@@ -10,7 +10,7 @@ int fibbi(int a, int b, int num ) {
   int f;
   if( num < 1 ){ 
     // n is our counter and the number that the user input placed 
-    cout << "reached zero" << endl;  
+    cout << "this is your answer: "<< b<< endl;
     return b ; 
   }
 
@@ -20,6 +20,10 @@ int fibbi(int a, int b, int num ) {
     a = b ;
     b  = f ;
     num = num-1; 
+
+    //    cout <<"this is f "<<  f<< endl;
+    //    cout <<" this is a " << a <<endl;
+    
     return fibbi( a, b, num); 
   } 
 } 
@@ -32,7 +36,7 @@ int main() {
   cin >> num; 
   fibbi(a,b, num) ; 
   
-  cout << "this is your number: "<< fibbi(a,b, num)  << endl;
+  // cout << fibbi(a,b, num)  << endl;
 
   return 0 ; 
   

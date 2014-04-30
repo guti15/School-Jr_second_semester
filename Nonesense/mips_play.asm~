@@ -1,4 +1,4 @@
-.
+
 	.data
 msg1:	.asciiz "Give a number: "
 	.text
@@ -27,10 +27,10 @@ fib:
 	#if (y==1) return 1	;
 	#return( fib(y-1)+fib(y-2) ) ;
 
-	addi $sp,$sp,-12 #save in stack	
-	sw $ra,0($sp)				# saves the ra to call back 
-	sw $s0,4($sp)				# reg s0 put number 4 
-	sw $s1,8($sp)				# reg s1 put number 8 
+	addi $sp,$sp,-12 #save in stack
+	sw $ra,0($sp)
+	sw $s0,4($sp)
+	sw $s1,8($sp)
 
 	add $s0,$a0,$zero
 
@@ -60,7 +60,5 @@ exitfib:
 return1:
 	 li $v0,1
 	 j exitfib
-	
-return0 :
-	li $v0,0e
+	return0 :     li $v0,0
 	 j exitfib
